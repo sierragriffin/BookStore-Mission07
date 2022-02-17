@@ -1,0 +1,31 @@
+﻿<!--Shared Layout File-->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewData["Title"]</title>
+    <!--Links to boostrap css file and custom stylesheet-->
+    <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="icon" type="image/x-icon" href="~/img/book-icon.jpeg">
+</head>
+
+<body>
+    <!--heading-->
+    <div class="bg-dark text-white p-2" style="text-align:center">
+        <span class="navbar-brand ml-2">Online Book Store</span>
+    </div>
+
+    <!--main content-->
+    <div class="col-10 mx-auto">
+        @RenderBody()
+    </div>
+
+    <!--Links to boostrap js file-->
+    <script src="~/lib/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
